@@ -1,6 +1,5 @@
 package encapsulation;
 import java.util.ArrayList;
-
 import encapsulation.Student;
 
 public class Main
@@ -46,6 +45,11 @@ public class Main
         ss.setName("Alice"); //Method from Parent
         ss.setGrantAmount(5000.0); //Method from Child
         ss.displayGrant();
+
+        //Polymorphism
+        System.out.println("SubType Polymorphism"); //As Scholarship is a child class of Student class it is a type of Student Object and it can be added in a ArrayList that accepts Student type Objects.
+        ArrayList<Student> allStudents = new ArrayList<>();
+        allStudents.add(new Student("Normal", 101));
 
     }
 }
