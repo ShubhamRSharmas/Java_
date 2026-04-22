@@ -50,6 +50,20 @@ public class Main
         System.out.println("SubType Polymorphism"); //As Scholarship is a child class of Student class it is a type of Student Object and it can be added in a ArrayList that accepts Student type Objects.
         ArrayList<Student> allStudents = new ArrayList<>();
         allStudents.add(new Student("Normal", 101));
+        allStudents.add(new ScholarshipStudent("ad",12,8.7)); //Yes this works!
 
+        for (Student i: allStudents)
+        {
+            System.out.println(i.getName());
+        }
+
+        System.out.println("Polymorphism - Method Overriding | Dynamic Polymorphism | Runtime Polymorphism");
+
+        //Polymorphism - Method Overriding | Dynamic Polymorphism | Runtime Polymorphism
+        for (Student i : allStudents)
+        {
+            //Java automatically calls the correct version of method - If Student object, it's method will work if ScholarshipStudent then it's method will be called
+            i.displayDetails();
+        }
     }
 }
