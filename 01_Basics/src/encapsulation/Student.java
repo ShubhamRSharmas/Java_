@@ -40,4 +40,10 @@ class Student
     {
         this.rollNumber = rollNumber;
     }
+
+    //Polymorphism - Method Overriding [A child class provides a specific implementation for a method that is already defined in its Parent class]
+    public void displayDetails()
+    {
+        System.out.println("Student: " + name + ", Roll: " + rollNumber);
+    }
 }
