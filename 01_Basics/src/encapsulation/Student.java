@@ -2,6 +2,19 @@ package encapsulation;
 
 class Student
 {
+    //No-arguments Constructor
+    public Student()
+    {
+        //No argument Constructor
+    }
+
+    //Parameterized Constructor
+    public Student(String name, int rollNumber)
+    {
+        this.name = name;
+        this.rollNumber = rollNumber;
+    }
+
     //1. Make Data private
     private String name;
     private int rollNumber;

@@ -5,6 +5,16 @@ public class ScholarshipStudent extends Student
 {
     private double grantAmount;
 
+    public ScholarshipStudent()
+    {
+
+    }
+    public ScholarshipStudent(String name, int rollNumber, double grantAmount)
+    {
+        super(name, rollNumber); //This calls the Parent Constructor
+        this.grantAmount = grantAmount;
+    }
+
     public void setGrantAmount(double grantAmount)
     {
         this.grantAmount = grantAmount;
