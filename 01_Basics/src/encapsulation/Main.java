@@ -39,5 +39,13 @@ public class Main
             System.out.println(i.getName()+","+i.getRollNumber());
         }
 
+        //To test Inheritance:
+        System.out.println("Inheritance");
+
+        ScholarshipStudent ss = new ScholarshipStudent();
+        ss.setName("Alice"); //Method from Parent
+        ss.setGrantAmount(5000.0); //Method from Child
+        ss.displayGrant();
+
     }
 }
