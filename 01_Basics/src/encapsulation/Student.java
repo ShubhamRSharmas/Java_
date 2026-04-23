@@ -1,6 +1,6 @@
 package encapsulation;
-
-class Student
+//Abstract class
+abstract class Student
 {
     //No-arguments Constructor
     public Student()
@@ -14,7 +14,7 @@ class Student
         this.name = name;
         this.rollNumber = rollNumber;
     }
-
+    //3 Steps of Encapsulation
     //1. Make Data private
     private String name;
     private int rollNumber;
@@ -46,4 +46,8 @@ class Student
     {
         System.out.println("Student: " + name + ", Roll: " + rollNumber);
     }
+
+    //Abstraction - Abstract Method - Implementation will be in Child class.
+    protected double baseFee = 11000.0;
+    public abstract double calculateFees();
 }
