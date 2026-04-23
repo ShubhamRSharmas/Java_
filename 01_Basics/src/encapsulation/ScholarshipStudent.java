@@ -36,4 +36,11 @@ public class ScholarshipStudent extends Student
         super.displayDetails();
         System.out.println("Grant: " + grantAmount);
     }
+
+    //Abstraction - Implementation of abstract Method
+    @Override
+    public double calculateFees()
+    {
+        return baseFee - this.grantAmount;
+    }
 }
